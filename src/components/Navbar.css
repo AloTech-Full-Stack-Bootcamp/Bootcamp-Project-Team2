@@ -1,3 +1,26 @@
 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #1eddea;
+}
+
+.navbar__header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar__link > h4 {
+  margin-right: 15px;
+}
+
+.text_link {
+  text-decoration: none;
+  color: black;
 }
