@@ -11,7 +11,7 @@ function Navbar() {
 
       <div className="navbar__link">
         <h4>
-          <Link className="text_link" to="/home">
+          <Link className="text_link" to="/">
             Home
           </Link>
         </h4>

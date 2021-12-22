@@ -2,12 +2,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #1eddea;
+  background-color: #27393a;
+  padding: 8px 16px;
 }
 
 .navbar__header {
   display: flex;
   justify-content: flex-start;
+}
+
+.navbar__header > h2 {
+  color: #b3d9dc;
 }
 
 .navbar__link {
@@ -22,5 +27,9 @@
 
 .text_link {
   text-decoration: none;
-  color: black;
+  color: #b3d9dc;
+}
+
+.text_link:hover {
+  color: #149eaf;
 }
