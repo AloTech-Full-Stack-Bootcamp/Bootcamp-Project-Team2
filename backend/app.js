@@ -1,7 +1,6 @@
 require("dotenv").config();//let's us to hide pool informations.
 const express = require("express")
 const userRouter = require("./api/users/userRouter")
-
 const app = express() //initialize the express application..
 
 //middlewares
@@ -15,4 +14,3 @@ app.use("/users", userRouter)
 app.listen(process.env.PORT, () => {
     console.log(`Server is working on port: ${process.env.APP_PORT}`);
 })
- 
