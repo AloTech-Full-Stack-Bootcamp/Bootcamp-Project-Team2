@@ -9,24 +9,23 @@
   display: flex;
   justify-content: center;
   padding-top: 150px;
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
 .process__table > table {
   background-color: #537ea1;
-  border: 1px solid rgb(8, 4, 75);
+  border: 1px solid #343A40;
   border-radius: 5px;
   padding: 25px;
-  box-shadow: 5px 10px 10px #1b58a8;
+  box-shadow: 5px 10px 10px #343A40;
 }
 
 .process__table > table > thead > tr > th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #2c7d8b;
+  background-color: #343A40;
   color: white;
 }
 
