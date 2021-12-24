@@ -6,20 +6,20 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar__header">
-        <h2>Admin Panel</h2>
+        <h3>Admin Panel</h3>
       </div>
 
       <div className="navbar__link">
-        <h4>
+        <h5>
           <Link className="text_link" to="/">
             Home
           </Link>
-        </h4>
-        <h4>
+        </h5>
+        <h5>
           <Link className="text_link" to="/process">
             Process
           </Link>
-        </h4>
+        </h5>
       </div>
     </div>
   );

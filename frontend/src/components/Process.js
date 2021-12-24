@@ -15,7 +15,7 @@ function Process() {
 
   return (
     <div className="process">
-      <h1>Admin Panel's Process</h1>
+      <h2>Admin Panel's Process</h2>
 
       <div className="process__table">
         <table>
