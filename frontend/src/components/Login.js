@@ -119,5 +119,5 @@ const mapStateToProps = (state) => {
   };
 };
 
-const WrappedLogin = Form.create({ name: "normal_login" })(Login);
+const WrappedLogin = Form(Login);
 export default connect(mapStateToProps)(WrappedLogin);

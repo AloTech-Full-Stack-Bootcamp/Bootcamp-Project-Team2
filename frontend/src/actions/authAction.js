@@ -39,4 +39,4 @@ const logout = () => {
   };
 };
 
-export default { login, logout };
+export { login, logout };

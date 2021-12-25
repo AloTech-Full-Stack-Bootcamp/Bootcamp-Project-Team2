@@ -1,8 +1,8 @@
 import axios from "axios";
 import { setAuthorizationToken } from "../helpers/setAuthorizationToken";
 
-export const login = (username, password) => {
-  return axios
+const login = async (username, password) => {
+  return await axios
     .post("http://localhost:3000/login", { username, password })
     .then((user) => {
       if (user.data.status) {
@@ -15,9 +15,14 @@ export const login = (username, password) => {
     .catch((err) => console.log(err));
 };
 
-export const logout = () => {
+const logout = () => {
   localStorage.removeItem("jwtToken");
   setAuthorizationToken(false);
 };
 
+const logger = {
+  login,
+  logout,
+};
 
+export default logger;
