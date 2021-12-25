@@ -3,7 +3,7 @@ import { setAuthorizationToken } from "../helpers/setAuthorizationToken";
 
 export const login = (username, password) => {
   return axios
-    .post("http://localhost:3000/account/login", { username, password })
+    .post("http://localhost:3000/login", { username, password })
     .then((user) => {
       if (user.data.status) {
         const { token } = user.data;
@@ -19,3 +19,5 @@ export const logout = () => {
   localStorage.removeItem("jwtToken");
   setAuthorizationToken(false);
 };
+
+

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import authService from "../services/authService";
 
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
@@ -18,7 +19,7 @@ const loginError = (error) => {
   };
 };
 
-export const login = (username, password) => {
+const login = (username, password) => {
   return (dispatch) => {
     authService
       .login(username, password)
@@ -31,9 +32,11 @@ export const login = (username, password) => {
   };
 };
 
-export const logout = () => {
+const logout = () => {
   authService.logout();
   return {
     type: LOGOUT,
   };
 };
+
+export default { login, logout };
