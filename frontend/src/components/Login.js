@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Form, Input, Button, Alert } from "antd";
 import Icon from "@ant-design/icons";
 import { connect, useDispatch } from "react-redux";
@@ -7,10 +7,11 @@ import { login, logout } from "../actions/authAction";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
   const dispatch = useDispatch();
 
-  const { isAuthenticated, error, errorMessage } = this.props;
-  const { getFieldDecorator } = this.props.form;
+  const { isAuthenticated, error, errorMessage } = mapStateToProps;
+  const { getFieldDecorator } = Form;
   if (isAuthenticated) this.props.history.push("/");
 
   useEffect(() => {
