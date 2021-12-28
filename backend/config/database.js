@@ -1,4 +1,5 @@
-const {createPool} = require("mysql") //we are going to use only the createPool
+//const {createPool} = require("mysql") //we are going to use only the createPool
+const {createPool} = require("mysql")
 
 const pool = createPool({
     port:process.env.DB_PORT,
