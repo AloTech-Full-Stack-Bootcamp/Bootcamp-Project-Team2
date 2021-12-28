@@ -1,13 +1,8 @@
-//const {createPool} = require("mysql") //we are going to use only the createPool
-const {createPool} = require("mysql")
+import {Sequelize} from "sequelize";
 
-const pool = createPool({
-    port:process.env.DB_PORT,
-    host:process.env.DB_HOST,
-    user:process.env.DB_USER,
-    password:process.env.DB_PASS,
-    database:process.env.MYSQL_DB,
-    connectionLimits:10
-})
+const db = new Sequelize('auth_db','root','',{
+    host: "localhost",
+    dialect: "mysql"
+});
 
-module.exports = pool //with the help of pool, we can reuse the connections, we are keeping our connection in a pool, so whenever we make a request, we use that connection.
+export default db;
