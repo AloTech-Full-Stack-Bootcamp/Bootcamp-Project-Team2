@@ -8,7 +8,7 @@
 - İrem Buz
 
 
-In this projecton on the Frontend;
+In this project on the Frontend;
 - Bulma Css for design
 - React Hooks
 - React Router Dom
