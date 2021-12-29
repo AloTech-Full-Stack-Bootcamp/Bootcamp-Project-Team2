@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <Fragment>
         <Routes>
-          <Route exact path="/" element={Login} />
-          <Route path="/register" element={Register} />
-          <Route path="/dashboard" element={(Navbar, Dashboard)} />
+          <Route exact path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={((<Navbar />), (<Dashboard />))} />
         </Routes>
       </Fragment>
     </BrowserRouter>
